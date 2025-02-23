@@ -1,5 +1,5 @@
 export default class Cl_mEstudiante {
-    constructor (nombre, cedula, sexo, nota) {
+    constructor ({nombre, cedula, sexo, nota}) {
         this.nombre = nombre;
         this.cedula = cedula;
         this.sexo = sexo;
@@ -19,7 +19,7 @@ export default class Cl_mEstudiante {
         return this._cedula;
     }
     set sexo (sexo) {
-        this._sexo = sexo;
+        this._sexo = sexo.toUpperCase();
     }
     get sexo () {
         return this._sexo;
