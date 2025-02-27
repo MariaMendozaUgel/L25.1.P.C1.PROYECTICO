@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Examen</title>
 </head>
 <body>
-    <script src="./js/principal.js" type="module"></script>
+    <section id="mainForm">
+    <h3>Datos del estudiante</h3>
+    <table id="mainForm_tabla">
+        <tr>
+            <th>nombre</th>
+            <th>cedula</th>
+            <th>sexo</th>
+            <th>nota</th>
+        </tr>
+    </table>
+    <h5>Porcentaje de aprobados: <span id="mainForm_lblAprobados">%</span></h5>
+    <h5>Mejor nota: <span id="mainForm_lblMejorNota"></span></h5>
+    <h5>Porcentaje de chicas aprobadas <span id="mainForm_lblChicasAprobadas">%</span></h5>
+    <button id="mainForm_btAgregar">Agregar</button>
+</section>
+<section id="estudianteForm">
+    <h3>Resultados</h3>
+    <input type="text" id="estudianteForm_inNombre" placeholder="Nombre"></input>
+    <input type="text" id="estudianteForm_inCedula" placeholder="Cedula"></input>
+    <input type="text" id="estudianteForm_inSexo" placeholder="Sexo"></input>
+    <input type="text" id="estudianteForm_inNota" placeholder="Nota"></input>
+    <button id="estudianteForm_btProcesar">Procesar</button>
+</section>
 </body>
+<script type="module">
+    import principal from "./js/principal.js";
+    new principal();
+</script>
 </html>

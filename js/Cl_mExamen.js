@@ -6,7 +6,7 @@ export default class Cl_mExamen {
        this.contChicasAprobadas = 0;
        this.aprobados = 0;
        this.minPrueba = 9.6;
-       this.mejorNota = 9.6;
+       this.mejorNota = 0;
        this.estudianteMejorNota = 0;
     }
     procesarEstudiante (e) {
