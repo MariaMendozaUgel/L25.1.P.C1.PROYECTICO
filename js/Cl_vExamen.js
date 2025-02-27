@@ -45,8 +45,8 @@ export default class Cl_vExamen {
                 <td>${this.vEstudiante.nota}</td>
             </tr>
         `;
-        this.lblAprobados.innerHTML = `Porcentaje de aprobados: ${porcentajeAprobados}%` ;
-        this.lblMejorNota.innerHTML = `Estudiante con mejor nota: ${estudianteConMejorNota}` ;
-        this.lblChicasAprobadas.innerHTML = `Porcentaje de chicas aprobadas: ${porcentajeChicasAprobadas}%` ;    
-    }
+        this.lblAprobados.innerHTML = porcentajeAprobados + "%";
+        this.lblMejorNota.innerHTML = estudianteConMejorNota;
+        this.lblChicasAprobadas.innerHTML = porcentajeChicasAprobadas + "%"
+        ;}
     }
